@@ -25,8 +25,6 @@ export function submitTransaction(data) {
           console.log('∆∆∆ number', number)
         })
     } catch (e) {
-      console.log('∆∆∆ e sendTransaction', e)
-
       dispatch({
         type: 'NEW_TRANSACTION:ERROR',
         error: e.toString()
